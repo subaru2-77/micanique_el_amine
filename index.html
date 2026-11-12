@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ميكانيك السيارات الأمين - ورشة صيانة متخصصة في تغيير الفرامل، الزيوت، وصيانة المحركات في طنجة، المغرب. احجز موعدك الآن.">
+    <title>ميكانيك السيارات الأمين | حجز موعد لتغيير الفرامل والزيوت وصيانة السيارات</title>
+    
+    <!-- خطوط Google Fonts (Cairo & Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E53E3E',
+                            darkRed: '#C53030',
+                            dark: '#0F172A',
+                            surface: '#1E293B',
+                            accent: '#F59E0B'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- 1. شريط الاتصال السريع العلوي (Top Header Bar) -->
+    <header class="bg-brand-darkRed text-white text-xs md:text-sm py-2 px-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot"></i> المغرب - طنجة</span>
+                <span class="hidden sm:inline">|</span>
+                <span class="hidden sm:inline-flex items-center gap-1.5"><i class="fa-solid fa-clock"></i> مفتوح: الإثنين - السبت (8:30 ص - 7:30 م)</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+212627905394" class="hover:underline flex items-center gap-1 font-bold">
+                    <i class="fa-solid fa-phone"></i> 0627-905394
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. شريط التنقل الرئيسي (Navbar) -->
+    <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-red to-amber-500 flex items-center justify-center text-white shadow-lg shadow-brand-red/20">
+                    <i class="fa-solid fa-wrench text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl md:text-2xl font-black tracking-tight text-white block">ميكانيك <span class="text-brand-red">الأمين</span></span>
+                    <span class="text-xs text-slate-400 font-normal">صيانة، فرامل، وتغيير الزيوت</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-semibold text-slate-300">
+                <a href="#services" class="hover:text-brand-red transition">خدماتنا</a>
+                <a href="#why-us" class="hover:text-brand-red transition">لماذا الأمين؟</a>
+                <a href="#location" class="hover:text-brand-red transition">موقعنا</a>
+                <a href="https://www.instagram.com/micanique_el_amine/" target="_blank" class="text-pink-500 hover:text-pink-400 transition flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-lg"></i> إنستغرام
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="#booking" class="bg-brand-red hover:bg-brand-darkRed text-white px-5 py-2.5 rounded-xl font-bold shadow-lg shadow-brand-red/30 transition transform hover:-translate-y-0.5 text-sm md:text-base flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>احجز موعدك</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. قسم البانر الرئيسي ونموذج الحجز (Hero Section & Booking Form) -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(229,62,62,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- نص الواجهة -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-brand-accent text-xs md:text-sm font-semibold">
+                        <i class="fa-solid fa-oil-can"></i> متخصصون في تغيير الزيوت والفرامل وصيانة محركات السيارات
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                        سيارتك في أيدٍ أمينة مع <br class="hidden sm:inline"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-orange-400 to-amber-300">ميكانيك السيارات الأمين</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        نوفر لكم أفضل خدمات تغيير الفرامل بأنواعها، وتغيير الزيوت والفلاتر، وصيانة المحركات وعلب السرعة بخبرة عالية واحترافية لضمان سلامتك وسلامة سيارتك على الطريق.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#booking" class="bg-brand-red hover:bg-brand-darkRed text-white px-8 py-3.5 rounded-xl font-bold text-center text-lg shadow-xl shadow-brand-red/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-plus"></i>
+                            <span>حجز موعد صيانة فوري</span>
+                        </a>
+                        <a href="https://wa.me/212627905394" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-xl font-bold text-center text-lg shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>راسلنا واتساب</span>
+                        </a>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 text-slate-300">
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-red"></i>
+                            <span class="text-sm font-semibold">تغيير زيوت سريع</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-red"></i>
+                            <span class="text-sm font-semibold">فرامل أصلية ومضمونة</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-red"></i>
+                            <span class="text-sm font-semibold">أسعار مناسبة وواضحة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- نموذج الحجز (Booking Form) -->
+                <div class="lg:col-span-5" id="booking">
+                    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="absolute -top-3 right-6 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Book an appointment for repair car
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">احجز موعد الصيانة الآن</h2>
+                        <p class="text-sm text-slate-400 mb-6">حدد الخدمة والموعد وسنكون في انتظارك بالورشة لتجهيز سيارتك فوراً.</p>
+
+                        <form id="appointmentForm" class="space-y-4" onsubmit="handleBooking(event)">
+                            <div>
+                                <label for="clientName" class="block text-sm font-medium text-slate-300 mb-1">الاسم الكامل *</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-slate-500">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <input type="text" id="clientName" required placeholder="مثلاً: محمد العلوي" class="w-full bg-slate-800 border border-slate-700 rounded-xl pr-10 pl-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-red transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="carModel" class="block text-sm font-medium text-slate-300 mb-1">نوع وموديل السيارة *</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-slate-500">
+                                        <i class="fa-solid fa-car"></i>
+                                    </span>
+                                    <input type="text" id="carModel" required placeholder="مثلاً: Dacia Sandero 2021 أو Golf 7" class="w-full bg-slate-800 border border-slate-700 rounded-xl pr-10 pl-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-red transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="appointmentDate" class="block text-sm font-medium text-slate-300 mb-1">تاريخ الموعد *</label>
+                                    <input type="date" id="appointmentDate" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-brand-red transition">
+                                </div>
+                                <div>
+                                    <label for="serviceType" class="block text-sm font-medium text-slate-300 mb-1">نوع الخدمة *</label>
+                                    <select id="serviceType" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-brand-red transition">
+                                        <option value="تغيير الفرامل (صفائح وأقراص)">تغيير الفرامل (صفائح وأقراص)</option>
+                                        <option value="تغيير الزيوت والفلاتر (Vidange)">تغيير الزيوت والفلاتر (Vidange)</option>
+                                        <option value="تغيير الفرامل والزيوت معاً">تغيير الفرامل والزيوت معاً</option>
+                                        <option value="صيانة وإصلاح المحرك">صيانة وإصلاح المحرك</option>
+                                        <option value="استبدال طقم الدبرياج (Kit Embrayage)">استبدال طقم الدبرياج (Kit Embrayage)</option>
+                                        <option value="استبدال حزام المحرك (Courroie)">استبدال حزام المحرك (Courroie)</option>
+                                        <option value="إصلاح ميكانيكي عام">إصلاح ميكانيكي عام</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="notes" class="block text-sm font-medium text-slate-300 mb-1">ملاحظات إضافية (اختياري)</label>
+                                <textarea id="notes" rows="2" placeholder="صفير في الفرامل، موعد الفيدونج، استفسار عن نوع الزيت..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-red transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-900/40 transition flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>إرسال وتأكيد الحجز عبر واتساب</span>
+                            </button>
+                            <p class="text-[11px] text-slate-500 text-center">سيتم فتح تطبيق الواتساب فوراً لإرسال بيانات الحجز إلى الورشة مباشرة.</p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. قسم الخدمات (Services Section) -->
+    <section id="services" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase">خدماتنا المتميزة</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">ماذا نقدم في ميكانيك الأمين؟</h2>
+                <p class="text-slate-400 mt-3">خدمات احترافية متخصصة تركز على سلامة سيارتك وأدائها العالي على الطريق.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- خدمة 1: تغيير الفرامل -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-brand-red/40 relative shadow-lg shadow-brand-red/5 hover:border-brand-red transition hover:bg-slate-800">
+                    <span class="absolute top-4 left-4 bg-brand-red text-white text-[11px] font-bold px-2.5 py-1 rounded-full">خدمة رئيسية</span>
+                    <div class="w-14 h-14 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-circle-stop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">تغيير وصيانة الفرامل (Système de Freinage)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">استبدال صفائح الفرامل (Plaquettes de frein)، وأقراص الفرامل (Disques)، فحص وضبط زيت الفرامل، والقضاء على الأصوات وصفير المكابح لضمان توقف آمن ودقيق.</p>
+                </div>
+
+                <!-- خدمة 2: تغيير الزيوت والفلاتر -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-amber-500/40 relative shadow-lg shadow-amber-500/5 hover:border-amber-500 transition hover:bg-slate-800">
+                    <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-[11px] font-bold px-2.5 py-1 rounded-full">خدمة سريعة</span>
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-oil-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">تغيير الزيوت والفلاتر (Vidange Complète)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">تغيير زيت المحرك الأصلي والأنسب لسيارتك، استبدال فلتر الزيت، فلتر الهواء، فلتر الوقود، وفلتر المكيف، مع مراجعة شاملة لجميع السوائل الحيوية.</p>
+                </div>
+
+                <!-- خدمة 3: صيانة وتجديد المحرك -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-slate-700/60 hover:border-brand-red/50 transition hover:bg-slate-800">
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">إصلاح وتجديد المحركات</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">صيانة الأعطال الميكانيكية للمحرك، تغيير جوان الكولاس (Joint de culasse)، معالجة تسريبات الزيوت، وحل مشاكل ارتفاع درجات الحرارة.</p>
+                </div>
+
+                <!-- خدمة 4: حزام المحرك (Courroie) -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-slate-700/60 hover:border-brand-red/50 transition hover:bg-slate-800">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">حزام التوزيع والمضخات (Distribution)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">استبدال طقم حزام التوزيع (Kit chaîne / courroie de distribution) ومضخة الماء (Pompe à eau) في الوقت المناسب لتفادي تلف المحرك.</p>
+                </div>
+
+                <!-- خدمة 5: الدبرياج وعلبة السرعة -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-slate-700/60 hover:border-brand-red/50 transition hover:bg-slate-800">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">الدبرياج وعلبة السرعة (Embrayage)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">تغيير أطقم الدبرياج (Disque, plateau, butée)، حل مشاكل ثقل الدواسة وصعوبة تمرير السرعات، وتغيير زيت علبة السرعة (Boîte de vitesses).</p>
+                </div>
+
+                <!-- خدمة 6: صيانة عامة للأعطال الميكانيكية -->
+                <div class="bg-slate-800/60 p-7 rounded-2xl border border-slate-700/60 hover:border-brand-red/50 transition hover:bg-slate-800">
+                    <div class="w-14 h-14 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">الإصلاحات الميكانيكية العامة</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">معالجة وتصليح جميع الأصوات والاهتزازات الميكانيكية المفاجئة، وضبط المحرك، واستبدال القطع الاستهلاكية بكفاءة واحترافية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. قسم مميزات الورشة (Why Choose Us) -->
+    <section id="why-us" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-accent font-bold text-sm tracking-widest uppercase">ثقة وشفافية</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">لماذا تختار ورشة ميكانيك الأمين؟</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex-shrink-0 flex items-center justify-center text-brand-red text-xl">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">الصدق والأمانة الميكانيكية</h4>
+                                <p class="text-slate-400 text-sm">نصلح ما تحتاجه سيارتك فقط دون أي مصاريف غير مبررة، مع فحص يدوي دقيق وخبرة في اكتشاف مصادر الصوت والخلل.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex-shrink-0 flex items-center justify-center text-brand-red text-xl">
+                                <i class="fa-solid fa-stopwatch"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">سرعة في تغيير الزيوت والفرامل</h4>
+                                <p class="text-slate-400 text-sm">نحرص على إنهاء خدمات الفيدونج وتغيير الفرامل في وقت قياسي دون المساس بدقة وجودة العمل.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex-shrink-0 flex items-center justify-center text-brand-red text-xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">قطع غيار وزيوت أصلية ومعتمدة</h4>
+                                <p class="text-slate-400 text-sm">نستخدم زيوت المحركات المطابقة للمعايير الدولية وصفائح فرامل ذات جودة تحمي أقراص سيارتك وتضمن سلامتك.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://www.instagram.com/micanique_el_amine/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition hover:opacity-95">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                            <span>شاهد صور أعمالنا اليومية على إنستغرام</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl border border-slate-700 shadow-xl space-y-6">
+                    <div class="border-b border-slate-700 pb-4">
+                        <h3 class="text-2xl font-bold text-white">هل حان موعد الفيدونج أو تغيير الفرامل؟</h3>
+                        <p class="text-slate-400 text-sm mt-1">تواصل مباشرة معنا للاستفسار عن أسعار الزيوت والفرامل المتوافقة مع سيارتك.</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">اتصال مباشر</div>
+                                <div class="text-base font-bold text-white" dir="ltr">+212 627-905394</div>
+                            </div>
+                        </div>
+                        <a href="tel:+212627905394" class="bg-brand-red hover:bg-brand-darkRed text-white px-4 py-2 rounded-lg text-sm font-bold transition">اتصل الآن</a>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">محادثة واتساب</div>
+                                <div class="text-base font-bold text-white">رد سريع</div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/212627905394" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-bold transition">تحدث معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. قسم الموقع والخريطة ومعلومات الاتصال (Contact & Location Section) -->
+    <section id="location" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase">سهولة الوصول</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">موقع الورشة على خرائط Google</h2>
+                <p class="text-slate-400 text-sm mt-2">ميكانيك السيارات الأمين - نرحب بكم في مقرنا لتغيير الفرامل والزيوت وصيانة السيارات.</p>
+            </div>
+
+            <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl grid lg:grid-cols-3">
+                <div class="p-8 lg:col-span-1 flex flex-col justify-between space-y-6">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-4">معلومات العنوان والاتصال</h4>
+                        <div class="space-y-4 text-slate-300 text-sm">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-map-location-dot text-brand-red text-lg mt-1"></i>
+                                <span>ميكانيك السيارات الأمين، طنجة، المغرب</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-emerald-400 text-lg"></i>
+                                <span dir="ltr">+212 627-905394</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-instagram text-pink-400 text-lg"></i>
+                                <a href="https://www.instagram.com/micanique_el_amine/" target="_blank" class="hover:underline">@micanique_el_amine</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/place/%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D9%86%E2%80%AD/@35.7567545,-5.8421644,17z" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition">
+                        <i class="fa-solid fa-diamond-turn-right"></i>
+                        <span>افتح الاتجاهات في Google Maps</span>
+                    </a>
+                </div>
+
+                <div class="lg:col-span-2 h-80 lg:h-auto min-h-[350px]">
+                    <iframe 
+                        title="Garage Location"
+                        class="w-full h-full border-0" 
+                        src="https://maps.google.com/maps?q=35.7567545,-5.8421644&hl=ar&z=16&output=embed"
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. تذييل الصفحة (Footer) -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-wrench text-brand-red"></i>
+                <span class="font-bold text-white">ميكانيك السيارات الأمين</span>
+                <span>© 2026 جميع الحقوق محفوظة</span>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="https://www.instagram.com/micanique_el_amine/" target="_blank" class="text-slate-400 hover:text-pink-500 transition text-xl" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/212627905394" target="_blank" class="text-slate-400 hover:text-emerald-500 transition text-xl" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="tel:+212627905394" class="text-slate-400 hover:text-white transition text-xl" title="Phone">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. زر واتساب العائم السريع (Floating WhatsApp Button) -->
+    <a href="https://wa.me/212627905394" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 focus:outline-none" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- 9. كود إرسال نموذج الحجز عبر WhatsApp -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('appointmentDate');
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            dateInput.min = new Date().toISOString().split('T')[0];
+            dateInput.value = tomorrow.toISOString().split('T')[0];
+        });
+
+        function handleBooking(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('clientName').value.trim();
+            const car = document.getElementById('carModel').value.trim();
+            const date = document.getElementById('appointmentDate').value;
+            const service = document.getElementById('serviceType').value;
+            const notes = document.getElementById('notes').value.trim();
+
+            const phoneNumber = "212627905394";
+
+            // الرسالة المنظمة المطلوبة تبدأ بـ Book an appointment for repair car
+            let message = `*Book an appointment for repair car*%0A`;
+            message += `*طلب حجز موعد - ميكانيك الأمين*%0A`;
+            message += `-----------------------------------%0A`;
+            message += `👤 *الاسم:* ${encodeURIComponent(name)}%0A`;
+            message += `🚗 *نوع وموديل السيارة:* ${encodeURIComponent(car)}%0A`;
+            message += `🛠 *الخدمة المطلوبة:* ${encodeURIComponent(service)}%0A`;
+            message += `📅 *تاريخ الموعد:* ${encodeURIComponent(date)}%0A`;
+            if (notes) {
+                message += `📝 *ملاحظات:* ${encodeURIComponent(notes)}%0A`;
+            }
+            message += `-----------------------------------%0A`;
+            message += `_تم الإرسال عبر الموقع الإلكتروني_`;
+
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
